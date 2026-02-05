@@ -1,0 +1,7 @@
+{
+  "name": "VISIONÁRIO PRO 2.0 MOVIE",
+  "description": "A high-end cinematic video generator that transforms up to 50 images into 8-second 720p professional videos using Gemini Veo technology.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
