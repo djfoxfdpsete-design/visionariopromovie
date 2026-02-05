@@ -74,7 +74,7 @@ export class GeminiService {
         throw new Error("Link de download não encontrado no resultado final.");
       }
 
-      const response = await fetch(`${downloadLink}&key=${process.env.API_KEY}`, { signal });
+      const response = await fetch(`${downloadLink}&key=${import.meta.env.VITE_GEMINI_API_KEY}`, { signal });
       if (!response.ok) throw new Error("Falha ao baixar o arquivo de vídeo do servidor.");
 
       const blob = await response.blob();
